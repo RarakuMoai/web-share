@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#233a54">
+<title>網頁分享中心</title>
+<style>
+:root{
+  --ink:#243343;--muted:#6d7885;--paper:#fff;--navy:#233a54;
+  --blue:#416c91;--mist:#eef3f7;--sand:#f1e8db;--line:#dfe6ec;
+  --shadow:0 16px 45px rgba(32,51,70,.11)
+}
+*{box-sizing:border-box}
+body{
+  margin:0;min-height:100vh;color:var(--ink);
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC","Microsoft JhengHei",sans-serif;
+  background:
+    radial-gradient(circle at 10% 0%,rgba(216,168,104,.16),transparent 30rem),
+    linear-gradient(180deg,#f4f7f9 0,#edf1f5 100%);
+}
+.hero{
+  position:relative;overflow:hidden;color:#fff;padding:70px 20px 52px;
+  background:
+    linear-gradient(125deg,rgba(29,50,73,.98),rgba(56,91,122,.94)),
+    repeating-linear-gradient(45deg,transparent 0 24px,rgba(255,255,255,.025) 24px 26px);
+}
+.hero:before,.hero:after{
+  content:"";position:absolute;border:1px solid rgba(255,255,255,.09);border-radius:50%
+}
+.hero:before{width:380px;height:380px;right:-140px;top:-190px}
+.hero:after{width:220px;height:220px;right:110px;bottom:-170px}
+.wrap{max-width:1040px;margin:auto}
+.kicker{font-size:.78rem;letter-spacing:.19em;opacity:.72}
+h1{font-size:clamp(2.4rem,7vw,4.8rem);line-height:1.03;margin:.55rem 0 1rem}
+.hero p{max-width:680px;margin:0;line-height:1.75;color:rgba(255,255,255,.82)}
+.hero .tip{
+  display:inline-flex;margin-top:22px;padding:8px 12px;border-radius:999px;
+  background:rgba(255,255,255,.11);border:1px solid rgba(255,255,255,.15);font-size:.84rem
+}
+main{padding:36px 18px 72px}
+.toolbar{display:flex;align-items:end;justify-content:space-between;gap:18px;margin-bottom:18px}
+.toolbar h2{margin:0;font-size:1.45rem}
+.toolbar p{margin:4px 0 0;color:var(--muted);font-size:.9rem}
+.count{color:var(--muted);font-size:.88rem;white-space:nowrap}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:19px}
+.card{
+  display:block;text-decoration:none;color:inherit;background:var(--paper);
+  border:1px solid rgba(35,58,84,.10);border-radius:25px;overflow:hidden;
+  box-shadow:var(--shadow);transition:transform .18s ease,box-shadow .18s ease
+}
+.card:hover{transform:translateY(-4px);box-shadow:0 22px 52px rgba(32,51,70,.16)}
+.cover{
+  position:relative;min-height:205px;padding:25px;color:white;overflow:hidden;
+  background:linear-gradient(135deg,#315b4c,#7d9c84)
+}
+.cover:before,.cover:after{
+  content:"";position:absolute;border-radius:50%;border:30px solid rgba(255,255,255,.075)
+}
+.cover:before{width:180px;height:180px;right:-60px;top:-70px}
+.cover:after{width:120px;height:120px;right:92px;bottom:-92px}
+.type{font-size:.78rem;letter-spacing:.14em;opacity:.78}
+.cover h3{position:relative;z-index:1;font-size:1.72rem;line-height:1.2;margin:28px 0 8px}
+.cover p{position:relative;z-index:1;margin:0;opacity:.83}
+.body{padding:21px 23px 23px}
+.meta{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:16px}
+.tag{font-size:.78rem;padding:5px 9px;border-radius:999px;background:var(--mist)}
+.open{font-weight:750;color:var(--blue)}
+.info{
+  margin-top:24px;background:rgba(255,255,255,.55);border:1px dashed rgba(35,58,84,.19);
+  border-radius:20px;padding:20px;color:var(--muted);line-height:1.7
+}
+.info b{color:var(--ink)}
+footer{text-align:center;color:var(--muted);font-size:.82rem;padding:0 20px 36px}
+@media(max-width:700px){
+  .grid{grid-template-columns:1fr}.hero{padding-top:52px}.cover{min-height:185px}
+  .toolbar{align-items:flex-start;flex-direction:column}.count{display:none}
+}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="kicker">HTML SHARE HUB</div>
+    <h1>網頁分享中心</h1>
+    <p>將行程、整理資料、比較內容、活動資訊與其他 HTML 頁面集中放在同一個網站。每份內容都有自己的網址，可直接分享給需要查看的人。</p>
+    <div class="tip">同一個 GitHub Pages，持續新增不同用途的網頁</div>
+  </div>
+</header>
+
+<main class="wrap">
+  <div class="toolbar">
+    <div><h2>已發布內容</h2><p>點選卡片開啟完整網頁</p></div>
+    <div class="count">目前 1 份</div>
+  </div>
+
+  <section class="grid">
+    <a class="card" href="./pages/2026-chiayi-trip/">
+      <div class="cover">
+        <div class="type">TRAVEL PLAN · 2026</div>
+        <h3>嘉義・元長三天兩夜</h3>
+        <p>西濱自駕、嘉義市區與元長探親</p>
+      </div>
+      <div class="body">
+        <div class="meta">
+          <span class="tag">行程規劃</span>
+          <span class="tag">3天2夜</span>
+          <span class="tag">手機版</span>
+          <span class="tag">地圖連結</span>
+        </div>
+        <div class="open">開啟網頁 →</div>
+      </div>
+    </a>
+  </section>
+
+  <div class="info">
+    <b>這個首頁不限定用途。</b>
+    未來可以新增旅遊行程、產品比較、聚會通知、專案說明、教學文件或任何可用瀏覽器開啟的 HTML 內容。
+  </div>
+</main>
+
+<footer>網站內容採公開網址分享。請勿放入密碼、證件、私人電話、訂單憑證或其他敏感資料。</footer>
+</body>
+</html>
