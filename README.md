@@ -10,6 +10,7 @@
 
 - 分享首頁：`https://你的帳號.github.io/web-share/`
 - 嘉義行程：`https://你的帳號.github.io/web-share/pages/2026-chiayi-trip/`
+- 活俠傳攻略：<https://rarakumoai.github.io/web-share/pages/legend-of-mortal/>
 
 ## 網站結構
 
@@ -19,7 +20,9 @@ web-share/
 ├─ 404.html
 ├─ .nojekyll
 ├─ pages/
-│  └─ 2026-chiayi-trip/
+│  ├─ 2026-chiayi-trip/
+│  │  └─ index.html
+│  └─ legend-of-mortal/
 │     └─ index.html
 └─ templates/
    └─ basic-page/
@@ -82,6 +85,8 @@ web-share/
 - 路徑不變，原本分享出去的網址就不會改變。
 
 ## 隱私
+
+活俠傳攻略是單一 HTML，內含資料與程式，可下載離線開啟。收集勾選、筆記、路線分支與配點保存在瀏覽器，可匯出／匯入 JSON；不同網址、裝置或瀏覽器不會自動同步。頁面列出 210 項登錄資料，互動功能涵蓋 30 個重要節點、36 條汗青路徑與 9 條風雲史主線。未建模與保留內容另列，不代表所有條目均已實機驗證或目前可取得。
 
 `noindex` 只是降低搜尋引擎收錄機率，不是密碼保護。知道網址的人仍可查看內容。
 不要放入密碼、證件、私人電話、完整住址、訂單憑證或登入連結。
